@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+.barra{
+    background-color: #95cac7;
+    align-items: center;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    
+}
+.barra ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.barra li{
+    margin-left: 50px;
+}
+.boton{
+    background-color: white;
+    border:none;
+    border-radius: 30px;
+    padding: 10px 10px;
+    transition: transform 0.3s ;
+    cursor: pointer;
+}
+.boton:hover{
+    transform: scale(1.05);
+}
+#btn{
+ border-radius: 15px;
+  background-color: rgb(224, 62, 62);
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+#btn:hover {
+  background-color: rgb(194, 40, 40);
+}
+.cuadrado{
+    background-color: #dad6d6;
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    margin-left:300px;
+    margin-top: 50px;
+    gap:20px;
+    padding: 30px;
+    margin: 60 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-color: #090909;
+    scrollbar-width: thin;      
+}
+
+.cuadrado h1{
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+.pedido{
+    background-color: white;
+    width: 850px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
