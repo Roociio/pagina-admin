@@ -1,25 +1,26 @@
 body{
-    background-color: #95cac7;
+    background: linear-gradient(180deg,#ffffff,#f4f1ff,#e0d9fb); 
     font-family: 'Inter', sans-serif;
-    
+    padding-top: 100px;
+    min-height: 100vh;
 }
 h1{
-    font-size: 60px;
+    margin-top: 80px;
     text-align: center;
-    margin-top: 50px;
+    font-size: 40px;
 }
 .cuadradoDeAñadir{
-
-   
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
- 
-    
+    height: 50vh;
+
 }
 
+
 #btn_Agregar_vuelos, #btn_Actualizar_vuelos, #btn_Eliminar_vuelos{
-    background-color: #95cac7;
+    background-color:rgba(126, 56, 238, 0.897);
+    color: white;
     width: 120px;
     height: 54px;
     border-radius: 20px;
@@ -27,25 +28,26 @@ h1{
     transition: transform 0.5s ease;
     padding: 0;
     margin-top: 0;
+    
 }
-
 #btn_Agregar_vuelos:hover{
-    transform: scale(1.05);
-    background-color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 #btn_Actualizar_vuelos:hover{
-    transform: scale(1.05);
-    background-color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 #btn_Eliminar_vuelos:hover{
-    transform: scale(1.05);
-    background-color: white;
-}
+    transform: scale(1.1);
+    transition: 0.5s;
+}   
 .todo{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding-top: 30px;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
 }
 .agregar_vuelos,.actualizar_vuelos,.eliminar_vuelos{
     display: none;
@@ -53,7 +55,7 @@ h1{
 .viajes{
     width: 400px;
     height: 500px;
-    background-color: #dad6d6;
+    background-color: white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -61,10 +63,17 @@ h1{
     justify-content: center;
     margin-right: 20px;
     margin-left: 30px;
-    
+    box-shadow: 0 8px 32px 0 rgba(118, 97, 202, 0.555); 
 }
 #tabla{
     display: none;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+    max-width: 800px;
+    width: 100%;
 }
 
 
@@ -76,7 +85,8 @@ input{
     width: 200px;
     height: 20px;
     border-radius: 10px;
-    border: none;
+    border:none;
+    box-shadow:  0 4px 32px 0 rgba(0, 0, 0, 0.37);
 }
 #id{
     margin-left: 28px;
@@ -100,24 +110,41 @@ transform: scale(1.05);
 }
 
 .btn1,.btn2,.btn3{
-    background-color: #dad6d6 ;
+    background-color: white ;
     border: none;
     transition: transform 0.4s  ease;
     border-radius: 5px;
+    height: 40px;
+    width: 80px;
 }
 .btn1:hover{
-    transform: scale(1.05);
-   background-color: white;
-
+box-shadow: 0 8px 32px 0 rgba(126, 56, 238, 0.897);
+   background-color:rgba(126, 56, 238, 0.897) ;
+   color: white;
+   font-size: small;
+transform: scale(1.2);
+transition: 0.5s;
 }
+
+
 .btn2:hover{
-    transform: scale(1.05);
-   background-color: white;
+    box-shadow: 0 8px 32px 0 rgba(126, 56, 238, 0.897);
+   background-color:rgba(126, 56, 238, 0.897) ;
+   color: white;
+   font-size: small;
+  transform: scale(1.2);
+    transition: 0.5s;
 }
 .btn3:hover{
-    transform: scale(1.05);
-   background-color: white;
+    box-shadow: 0 8px 32px 0 rgba(126, 56, 238, 0.897);
+   background-color:rgba(126, 56, 238, 0.897) ;
+   color: white;
+   font-size: small;
+  transform: scale(1.2);
+    transition: 0.5s;
 }
 .cuadrado{
     padding-top: 10px;
-}
+    display: flex;
+    gap: 50px;
+} 

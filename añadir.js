@@ -33,10 +33,11 @@ const btn3 = document.querySelector(".btn3");
 
 // Mostrar/Ocultar sección de agregar vuelos
 btn_agregar_vuelos.addEventListener("click", () => {
-    agreagar_vuelos.forEach(v => {
-        v.style.display = v.style.display === 'block' ? 'none' : 'block';
-    });
-});
+    document.querySelector('.agregar_vuelos').style.display = 'block'
+    document.querySelector('.actualizar_vuelos').style.display = 'none'
+    document.querySelector('.eliminar_vuelos').style.display = 'none'
+    tabla.style.display = 'none'
+})
 
 // Agregar vuelo (POST)
 btn1.addEventListener("click", () => {
@@ -64,11 +65,12 @@ btn1.addEventListener("click", () => {
 
 // Mostrar/Ocultar sección de actualizar vuelos
 btn_actualizar_vuelos.addEventListener("click", () => {
-    actualizar_vuelos.forEach(v => {
-        v.style.display = v.style.display === 'block' ? 'none' : 'block';
-    });
-    tabla.style.display = tabla.style.display === 'block' ? 'none' : 'block';
-});
+    
+    document.querySelector('.agregar_vuelos').style.display = 'none'
+    document.querySelector('.actualizar_vuelos').style.display = 'block'
+    document.querySelector('.eliminar_vuelos').style.display = 'none'
+    tabla.style.display = 'block'
+})
 
 // Actualizar vuelo (PUT)
 btn2.addEventListener("click", () => {
@@ -101,9 +103,11 @@ btn2.addEventListener("click", () => {
 
 // Mostrar/Ocultar sección eliminar vuelos
 btn_eliminar_vuelos.addEventListener("click", () => {
-    eliminar_vuelos.style.display = eliminar_vuelos.style.display === 'block' ? 'none' : 'block';
-    tabla.style.display = tabla.style.display === 'block' ? 'none' : 'block';
-});
+    document.querySelector('.agregar_vuelos').style.display = 'none'
+    document.querySelector('.actualizar_vuelos').style.display = 'none'
+    document.querySelector('.eliminar_vuelos').style.display = 'block'
+    tabla.style.display = 'block'
+})
 
 // Eliminar vuelo (DELETE)
 btn3.addEventListener("click", () => {
